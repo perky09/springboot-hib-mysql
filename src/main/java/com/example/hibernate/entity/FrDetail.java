@@ -1,4 +1,4 @@
-package com.example.entity;
+package com.example.hibernate.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="frdetail")
+@Table(name="frdetail",schema = "springbatch")
 public class FrDetail {
 	
 	@Id

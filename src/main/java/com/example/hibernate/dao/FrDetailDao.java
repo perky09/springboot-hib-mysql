@@ -1,9 +1,10 @@
 package com.example.hibernate.dao;
 
-import com.example.entity.FrDetail;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface FrDetailDao {
-	
-	public void createFrDetailTable(FrDetail frDetail);
+import com.example.hibernate.entity.FrDetail;
+@Repository
+public interface FrDetailDao extends JpaRepository<FrDetail,Integer>{
 
 }
